@@ -28,10 +28,6 @@
 # required by dev-vcs/git-2.3.6::gentoo[python,gtk]
 # required by x11-misc/compton-9999::gentoo
 # required by compton (argument)
-=dev-python/setuptools-9999 **
-# required by app-text/asciidoc-9999::gentoo
-# required by x11-misc/compton-9999::gentoo
-# required by compton (argument)
 =dev-util/aap-1.091-r2 **
 # required by dev-vcs/mercurial-9999::gentoo
 # required by app-text/asciidoc-9999::gentoo
@@ -39,19 +35,12 @@
 # required by compton (argument)
 =dev-python/docutils-0.12 **
 # required by compton (argument)
-=x11-misc/compton-9999 **
-# required by app-text/asciidoc-9999::gentoo[-test]
-# required by x11-misc/compton-9999::gentoo
-# required by compton (argument)
 =dev-util/source-highlight-3.1.7-r2 **
 # required by app-text/asciidoc-9999::gentoo
 # required by x11-misc/compton-9999::gentoo
 # required by compton (argument)
 =www-client/lynx-2.8.9_pre4 **
 # required by x11-misc/compton-9999::gentoo[python_targets_python3_4]
-# required by compton (argument)
-=dev-lang/python-3.4.3 **
-# required by x11-misc/compton-9999::gentoo
 # required by compton (argument)
 =dev-libs/libconfig-1.4.9-r1 **
 # required by x11-misc/compton-9999::gentoo

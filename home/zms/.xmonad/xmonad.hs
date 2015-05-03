@@ -36,7 +36,7 @@ myManageHook = composeAll
   className =? "Xmessage" --> doFloat,
   title =? "cairo-dock-dialog" --> doFloat,
   title =? "Chat" --> doFloat,
-  appName =? "crx_eggnbpckecmjlblplehfpjjdhhidfdoj" --> doFloat <+> doF copyToAll,
+  appName =? "crx_nckgahadagoaajjgafhacjanaoiihapd" --> doFloat <+> doF copyToAll,
   stringProperty "WM_WINDOW_ROLE" =? "pop-up" --> doFloat
   ]
 
