@@ -1,1 +1,5 @@
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad
+xsetroot -cursor_name left_ptr &
+compton &
+nitrogen --restore &
+urxvtd --quiet --opendisplay --fork &
+exec xmonad

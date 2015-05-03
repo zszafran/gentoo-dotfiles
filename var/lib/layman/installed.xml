@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repositories encoding="UTF-8" version="1.0">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>raiagent</name>
+    <description>Well-documented ebuilds en-route to a bandersnatch near you</description>
+    <homepage>https://github.com/leycec/raiagent</homepage>
+    <owner>
+      <email>leycec@gmail.com</email>
+      <name>Cecil Curry</name>
+    </owner>
+    <source type="git">git://github.com/leycec/raiagent.git</source>
+  </repo>
+</repositories>

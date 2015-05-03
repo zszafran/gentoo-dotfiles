@@ -91,3 +91,4 @@
 # required by @selected
 # required by @world (argument)
 >=x11-libs/libX11-1.6.3 abi_x86_32
+x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles iso14755 perl pixbuf vanilla xft unicode3
