@@ -62,5 +62,9 @@ x11-proto/xextproto
 x11-terms/rxvt-unicode
 x11-terms/st
 x11-terms/xterm
+x11-themes/gtk-engines
+x11-themes/gtk-engines-aurora
+x11-themes/gtk-engines-rezlooks
+x11-themes/gtk-theme-switch
 x11-wm/xmonad
 x11-wm/xmonad-contrib
