@@ -6,6 +6,7 @@ app-misc/powerline
 app-misc/screenfetch
 app-misc/terminal-colors
 app-portage/esearch
+app-portage/euses
 app-portage/gpytage
 app-portage/layman
 app-shells/gentoo-zsh-completions
@@ -20,6 +21,7 @@ dev-python/setuptools
 dev-util/aap
 dev-vcs/git
 dev-vcs/mercurial
+gnome-extra/synapse
 media-fonts/fantasque-sans-mono
 media-fonts/powerline-fonts
 media-fonts/powerline-symbols
@@ -38,6 +40,7 @@ sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-libs/glibc
+sys-libs/pam
 sys-process/cronie
 sys-process/htop
 www-client/google-chrome

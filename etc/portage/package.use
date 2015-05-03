@@ -91,7 +91,7 @@
 # required by @selected
 # required by @world (argument)
 >=x11-libs/libX11-1.6.3 abi_x86_32
-x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles iso14755 perl pixbuf xft unicode unicode3
+x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles iso14755 perl pixbuf xft unicode unicode3 alt-font-width buffer-on-clear wcwidth -vanilla
 # dev-python/cryptography -python3_4
 # required by x11-libs/libXfixes-5.0.1::gentoo
 # required by www-client/google-chrome-42.0.2311.135_p1::gentoo
@@ -103,4 +103,4 @@ x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles
 # required by @selected
 # required by @world (argument)
 >=x11-proto/xextproto-7.3.0 abi_x86_32
-x11-misc/compton -git
+>=dev-lang/python-2.7.9-r2:2.7 sqlite
