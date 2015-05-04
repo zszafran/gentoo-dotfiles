@@ -35,7 +35,9 @@ sys-apps/mlocate
 sys-apps/pciutils
 sys-apps/usbutils
 sys-boot/grub
+sys-boot/os-prober
 sys-devel/llvm
+sys-fs/ntfs3g
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
