@@ -15,3 +15,4 @@
 
 # NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
 /dev/sda5		/		ext4		noatime		0 1
+/dev/sdd1               /code           ext4            defaults        1 1

@@ -11,6 +11,8 @@ app-portage/gpytage
 app-portage/layman
 app-shells/gentoo-zsh-completions
 app-shells/zsh
+dev-java/oracle-jdk-bin
+dev-lang/closure-compiler-bin
 dev-lang/perl
 dev-lang/python
 dev-lang/python:3.3
@@ -21,6 +23,7 @@ dev-python/setuptools
 dev-util/aap
 dev-vcs/git
 dev-vcs/mercurial
+dev-vcs/subversion
 gnome-extra/synapse
 media-fonts/fantasque-sans-mono
 media-fonts/powerline-fonts
@@ -34,6 +37,7 @@ sys-apps/memtest86+
 sys-apps/mlocate
 sys-apps/pciutils
 sys-apps/usbutils
+sys-block/gparted
 sys-boot/grub
 sys-boot/os-prober
 sys-devel/llvm
@@ -45,17 +49,21 @@ sys-libs/glibc
 sys-libs/pam
 sys-process/cronie
 sys-process/htop
+virtual/jdk
 www-client/google-chrome
 x11-apps/xdm
 x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
+x11-drivers/ati-drivers
 x11-drivers/xf86-input-evdev
 x11-drivers/xf86-video-ati
 x11-libs/libXft
 x11-misc/compton
 x11-misc/dmenu
+x11-misc/dzen
 x11-misc/nitrogen
+x11-misc/pcmanfm
 x11-misc/tint2
 x11-misc/urxvt-perls
 x11-misc/xclip

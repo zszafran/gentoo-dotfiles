@@ -1,0 +1,6 @@
+post_src_prepare() {
+  if type epatch_user &> /dev/null ; then
+    cd ${S}
+    epatch_user
+  fi
+}

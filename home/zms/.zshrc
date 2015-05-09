@@ -56,4 +56,5 @@ if [ -f $HOME/.zsh_aliases ]; then
   source $HOME/.zsh_aliases
 fi
 
-export PATH=~/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/oracle-jdk-bin-1.8
+export PATH=~/bin:$HOME/git-clones/bazel/output:$PATH
