@@ -134,3 +134,4 @@ x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles
 # required by x11-drivers/ati-drivers-15.1::gentoo
 # required by x11-drivers/ati-drivers (argument)
 >=virtual/opengl-7.0-r1 abi_x86_32
+media-libs/mesa gbm egl gles2 llvm

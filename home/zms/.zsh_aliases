@@ -5,6 +5,10 @@ alias dotfile_add_all="sudo git ${GIT_FLAGS} add -u"
 alias dotfile_add="sudo git ${GIT_FLAGS} add"
 alias dotfile_submit="sudo git ${GIT_FLAGS} commit -m \"dotfiles\" && \
                       sudo git ${GIT_FLAGS} push upstream"
+alias dotfile_permissions="cd / && \
+                           sudo git ${GIT_FLAGS} ls-files | \
+                           xargs -n1 -d'\n' sudo stat -c \"%a %G %g %n\" | \
+                           sudo tee /.permissions"
 alias emerge_world="sudo emerge --verbose --update --deep --newuse --with-bdeps=y world"
 alias emerge_upgrade="sudo emerge --sync && sudo emerge -uDN --with-bdeps=y @world"
 alias rebuild_kernel="sudo sh /home/zms/tools/rebuild-kernel.sh"

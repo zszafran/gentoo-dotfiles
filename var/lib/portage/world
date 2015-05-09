@@ -2,6 +2,7 @@ app-admin/sudo
 app-admin/syslog-ng
 app-editors/gvim
 app-editors/vim
+app-laptop/radeontool
 app-misc/powerline
 app-misc/screenfetch
 app-misc/terminal-colors
@@ -29,6 +30,7 @@ media-fonts/fantasque-sans-mono
 media-fonts/powerline-fonts
 media-fonts/powerline-symbols
 media-gfx/fontforge
+media-libs/mesa
 net-misc/dhcpcd
 net-misc/netifrc
 sys-apps/dbus
@@ -51,6 +53,7 @@ sys-process/cronie
 sys-process/htop
 virtual/jdk
 www-client/google-chrome
+x11-apps/radeontop
 x11-apps/xdm
 x11-apps/xrandr
 x11-apps/xsetroot
