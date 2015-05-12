@@ -12,6 +12,7 @@ app-portage/gpytage
 app-portage/layman
 app-shells/gentoo-zsh-completions
 app-shells/zsh
+app-text/asciidoc
 dev-java/oracle-jdk-bin
 dev-lang/closure-compiler-bin
 dev-lang/perl
@@ -46,7 +47,6 @@ sys-devel/llvm
 sys-fs/ntfs3g
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
-sys-kernel/linux-firmware
 sys-libs/glibc
 sys-libs/pam
 sys-process/cronie
@@ -58,7 +58,7 @@ x11-apps/xdm
 x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
-x11-drivers/ati-drivers
+x11-drivers/radeon-ucode
 x11-drivers/xf86-input-evdev
 x11-drivers/xf86-video-ati
 x11-libs/libXft
