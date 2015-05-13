@@ -10,6 +10,7 @@ import XMonad.Hooks.ManageHelpers
 import XMonad.Layout.Minimize
 import XMonad.Layout.NoBorders
 import XMonad.Layout.WindowNavigation
+import XMonad.Operations
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Util.WindowProperties
@@ -29,6 +30,25 @@ myNormalBorderColor = "#2B2B2B"
 myFocusedBorderColor = "#ebebeb"
 myFocusFollowsMouse = False
 
+myXmonadBar = "dzen2 -x '0' -y '0' -h '24' -w '1000' -ta 'l' -dock"
+myStatusBar = "conky -c /home/zms/.xmonad/.conky_dzen | dzen2 -x '1000' -w '1410' -h '24' -ta 'r' -y '0' -dock"
+myTrayBar = "trayer --edge top --align right --width 150 --widthtype pixel --tint 0x1C1C1C --transparent true --height 24"
+
+myLogHook :: Handle -> X ()
+myLogHook h = dynamicLogWithPP $ defaultPP
+  {
+    ppCurrent = dzenColor "#FFE755" "#1C1C1C" . pad,
+    ppVisible = dzenColor "#C5C5C5" "#1C1C1C" . pad,
+    ppHidden  = dzenColor "#C5C5C5" "#1C1C1C" . pad,
+    ppHiddenNoWindows = dzenColor "#7b7b7b" "#1C1C1C" . pad,
+    ppUrgent = dzenColor "#ff0000" "#1C1C1C" . pad,
+    ppWsSep = " ",
+    ppSep = "  -  ",
+    ppLayout = dzenColor "#FFE755" "#1C1C1C",
+    ppTitle = (" " ++) . dzenColor "#C5C5C5" "#1C1C1C" . dzenEscape,
+    ppOutput =  hPutStrLn h
+  }
+
 myManageHook = composeAll
   [
   resource =? "trayer" --> doIgnore,
@@ -46,7 +66,6 @@ altMask = mod1Mask
 myKeys conf = M.fromList $
   [
   ((myModMask, xK_Return), spawn $ XMonad.terminal conf),
-  ((myModMask, xK_r), spawn "dmenu_run"),
   ((myModMask, xK_w), kill),
   ((myModMask, xK_space), sendMessage NextLayout),
   ((myModMask .|. shiftMask, xK_space), setLayout $ XMonad.layoutHook conf),
@@ -64,7 +83,7 @@ myKeys conf = M.fromList $
   ((myModMask, xK_g), goToSelected defaultGSConfig),
   ((myModMask .|. shiftMask, xK_Up), sendMessage (IncMasterN 1)),
   ((myModMask .|. shiftMask, xK_Down), sendMessage (IncMasterN (-1))),
-  ((myModMask, xK_q), broadcastMessage ReleaseResources >> spawn "killall tint2 && xmonad --recompile && xmonad --restart"),
+  ((myModMask, xK_q), broadcastMessage ReleaseResources >> spawn "killall conky trayer dzen2 && xmonad --recompile && xmonad --restart"),
   ((myModMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)),
   ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s"),
   ((0, xK_Print), spawn "scrot"),
@@ -86,14 +105,16 @@ myKeys conf = M.fromList $
   ]
 
 main = do
-    xmproc <- spawnPipe "/usr/bin/tint2 ~/.config/tint2/tint2rc"
+    trayerBar <- spawnPipe myTrayBar
+    dzenRightBar <- spawnPipe myStatusBar
+    dzenLeftBar <- spawnPipe myXmonadBar
     xmonad $ ewmh $ myBaseConfig
          {
            terminal = myTerminal,
            manageHook = manageDocks <+> myManageHook <+> manageHook myBaseConfig,
            layoutHook = minimize $ avoidStruts $ smartBorders $ spacing 60 $ layoutHook myBaseConfig,
            handleEventHook = fullscreenEventHook,
-           logHook = fadeInactiveLogHook 0.80,
+           logHook = myLogHook dzenLeftBar >> fadeInactiveLogHook 0.80,
            modMask = mod4Mask,
            borderWidth = myBorderWidth,
            normalBorderColor = myNormalBorderColor,

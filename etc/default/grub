@@ -13,7 +13,8 @@ GRUB_DISTRIBUTOR="Gentoo"
 #GRUB_CMDLINE_LINUX="radeon.modeset=0"
 #GRUB_CMDLINE_LINUX_DEFAULT=""
 #GRUB_TERMINAL=console
-GRUB_GFXMODE=2560x1600x32
+#GRUB_GFXMODE=2560x1600x32
+GRUB_GFXMODE=text
 GRUB_GFXPAYLOAD_LINUX=keep
 #GRUB_THEME="/boot/grub/themes/starfield/theme.txt"
 #GRUB_BACKGROUND="/boot/grub/mybackground.png"

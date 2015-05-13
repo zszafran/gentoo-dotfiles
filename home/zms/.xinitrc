@@ -1,6 +1,7 @@
 xsetroot -cursor_name left_ptr &
 xset s off &
 xset -dpms &
+xrdb -merge ~/.Xdefaults &
 compton -b &
 nitrogen --restore &
 urxvtd --quiet --opendisplay --fork &

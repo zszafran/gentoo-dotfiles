@@ -1,4 +1,4 @@
-URxvt*geometry: 240x84
+⎈URxvt*geometry: 240x84
 URxvt*loginShell: true
 URxvt*scrollColor: #777777
 URxvt*scrollstyle: plain
@@ -23,7 +23,6 @@ URxvt*foreground: #C5C5C5
 URxvt*colorUL: yellow
 URxvt*underlineColor: yellow
 
-#xft:inconsolata for powerline
 URxvt*font: xft:inconsolata for powerline:pixelsize:12
 URxvt*boldFont: xft:inconsolata for powerline:bold:pixelsize:12
 URxvt*italicFont: xft:inconsolata for powerline:italic:autohint=true:pixelsize=12
@@ -68,3 +67,8 @@ URxvt.keysym.Control-Up: \033[1;5A
 URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Left: \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
+
+dzen2.font: xft:inconsolata for powerline:pixelsize:10
+dzen2.foreground: #C5C5C5
+dzen2.background: #1C1C1C
+

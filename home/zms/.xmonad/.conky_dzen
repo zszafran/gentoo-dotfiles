@@ -1,0 +1,32 @@
+background yes
+out_to_console yes
+out_to_x no
+update_interval 1
+
+TEXT
+^i(/home/brafales/.xmonad/dzen2/cpu.xbm) \
+^fg(\#C5C5C5) \
+${cpubar cpu1} \
+${cpubar cpu2} \
+${cpubar cpu3} \
+${cpubar cpu4} \
+${cpubar cpu5} \
+${cpubar cpu6} \
+^i(/home/brafales/.xmonad/dzen2/mem.xbm) \
+^fg(\#048ac7) \
+${mem} \
+(${memperc}%) \
+^fg(\#ebac54) \
+${if_existing /proc/net/route eth0} \
+^i(/home/brafales/.xmonad/dzen2/net_wired.xbm) \
+^fg(\#cee318) \
+^i(/home/brafales/.xmonad/dzen2/net_down_03.xbm)${downspeed eth0} \
+^fg(\#ff005b) \
+^i(/home/brafales/.xmonad/dzen2/net_up_03.xbm)${upspeed eth0} \
+^fg(\#ebac54) \
+^i(/home/brafales/.xmonad/dzen2/clock.xbm) \
+^fg(\#ffe755) \
+${time %d %m %Y} \
+^fg(\#ffe755) \
+${time %R}
+

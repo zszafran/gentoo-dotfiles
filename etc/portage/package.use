@@ -1,6 +1,7 @@
 x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles iso14755 perl -pixbuf xft unicode unicode3 alt-font-width buffer-on-clear wcwidth -vanilla
 >=dev-lang/python-2.7.9-r2:2.7 sqlite
 media-gfx/gimp xpm
+x11-misc/dzen xpm
 media-libs/mesa gbm egl gles2 llvm
 # required by net-misc/teamviewer-9.0.32150::gentoo
 # required by teamviewer (argument)
