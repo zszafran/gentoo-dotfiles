@@ -31,9 +31,11 @@ media-fonts/fantasque-sans-mono
 media-fonts/powerline-fonts
 media-fonts/powerline-symbols
 media-gfx/fontforge
+media-gfx/gimp
 media-libs/mesa
 net-misc/dhcpcd
 net-misc/netifrc
+net-misc/teamviewer
 sys-apps/dbus
 sys-apps/memtest86
 sys-apps/memtest86+
