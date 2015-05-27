@@ -2,31 +2,60 @@ background yes
 out_to_console yes
 out_to_x no
 update_interval 1
+xftfont inconsolata for powerline:pixelsize:10
 
 TEXT
-^i(/home/brafales/.xmonad/dzen2/cpu.xbm) \
-^fg(\#C5C5C5) \
-${cpubar cpu1} \
-${cpubar cpu2} \
-${cpubar cpu3} \
-${cpubar cpu4} \
-${cpubar cpu5} \
-${cpubar cpu6} \
-^i(/home/brafales/.xmonad/dzen2/mem.xbm) \
-^fg(\#048ac7) \
-${mem} \
-(${memperc}%) \
-^fg(\#ebac54) \
-${if_existing /proc/net/route eth0} \
-^i(/home/brafales/.xmonad/dzen2/net_wired.xbm) \
-^fg(\#cee318) \
-^i(/home/brafales/.xmonad/dzen2/net_down_03.xbm)${downspeed eth0} \
-^fg(\#ff005b) \
-^i(/home/brafales/.xmonad/dzen2/net_up_03.xbm)${upspeed eth0} \
-^fg(\#ebac54) \
-^i(/home/brafales/.xmonad/dzen2/clock.xbm) \
-^fg(\#ffe755) \
-${time %d %m %Y} \
-^fg(\#ffe755) \
-${time %R}
-
+^fg(\#C5C5C5)\
+{ emerge: \
+^fg(\#0ac1cd)\
+${texeci 2 sh /home/zms/tools/emerge-progress.sh}\
+^fg(\#C5C5C5)\
+,   cpu: [ \
+^fg(\#833c9f)\
+${cpu cpu1}\
+^fg(\#C5C5C5)\
+, \
+^fg(\#833c9f)\
+${cpu cpu2}\
+^fg(\#C5C5C5)\
+, \
+^fg(\#833c9f)\
+${cpu cpu3}\
+^fg(\#C5C5C5)\
+, \
+^fg(\#833c9f)\
+${cpu cpu4}\
+^fg(\#C5C5C5)\
+, \
+^fg(\#833c9f)\
+${cpu cpu5}\
+^fg(\#C5C5C5)\
+, \
+^fg(\#833c9f)\
+${cpu cpu6}\
+^fg(\#C5C5C5)\
+ ],   mem: [ \
+^fg(\#048ac7)\
+${mem}\
+^fg(\#C5C5C5)\
+, \
+^fg(\#048ac7)\
+${memperc}\
+^fg(\#C5C5C5)\
+ ],   down: \
+^fg(\#cee318)\
+${downspeedf eth0}\
+^fg(\#C5C5C5)\
+,   up: \
+^fg(\#ff005b)\
+${upspeedf eth0}\
+^fg(\#C5C5C5)\
+,   epoch: \
+^fg(\#ffe755)\
+${time %s}\
+^fg(\#C5C5C5)\
+,   time: \
+^fg(\#ffe755)\
+${time %R}\
+^fg(\#C5C5C5)\
+ }

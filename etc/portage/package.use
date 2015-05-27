@@ -3,6 +3,8 @@ x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles
 media-gfx/gimp xpm
 x11-misc/dzen xpm
 media-libs/mesa gbm egl gles2 llvm
+x11-misc/redshift geoclue
+media-libs/libcanberra alsa
 # required by net-misc/teamviewer-9.0.32150::gentoo
 # required by teamviewer (argument)
 >=x11-libs/libSM-1.2.2-r1 abi_x86_32
@@ -145,3 +147,19 @@ media-libs/mesa gbm egl gles2 llvm
 # required by media-gfx/gimp-2.8.14::gentoo[pdf]
 # required by gimp (argument)
 >=app-text/poppler-0.32.0 cairo
+# required by dev-qt/qtcore-5.4.1::gentoo
+# required by dev-qt/qtgui-5.4.1-r1::gentoo
+# required by dev-util/cmake-3.2.2::gentoo[qt5]
+# required by app-text/poppler-0.32.0::gentoo
+# required by media-gfx/gimp-2.8.14::gentoo[pdf]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre-8.37-r1 pcre16
+# required by x11-libs/libxkbcommon-0.5.0::gentoo[X]
+# required by dev-qt/qtgui-5.4.1-r1::gentoo[xcb]
+# required by dev-util/cmake-3.2.2::gentoo[qt5]
+# required by app-text/poppler-0.32.0::gentoo
+# required by media-gfx/gimp-2.8.14::gentoo[pdf]
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libxcb-1.11-r1 xkb

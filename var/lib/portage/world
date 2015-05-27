@@ -9,6 +9,7 @@ app-misc/screenfetch
 app-misc/terminal-colors
 app-portage/esearch
 app-portage/euses
+app-portage/gentoolkit
 app-portage/gpytage
 app-portage/layman
 app-shells/gentoo-zsh-completions
@@ -24,6 +25,7 @@ dev-python/pip
 dev-python/python-distutils-extra
 dev-python/setuptools
 dev-util/aap
+dev-util/ccache
 dev-vcs/git
 dev-vcs/mercurial
 dev-vcs/subversion
@@ -31,13 +33,18 @@ gnome-extra/synapse
 media-fonts/fantasque-sans-mono
 media-fonts/powerline-fonts
 media-fonts/powerline-symbols
+media-fonts/terminus-font
 media-gfx/fontforge
 media-gfx/gimp
 media-libs/mesa
+media-sound/pavucontrol
+media-sound/pulseaudio
+media-sound/volti
 net-misc/dhcpcd
 net-misc/netifrc
 net-misc/teamviewer
 sys-apps/dbus
+sys-apps/groff
 sys-apps/memtest86
 sys-apps/memtest86+
 sys-apps/mlocate
@@ -61,6 +68,7 @@ x11-apps/xdm
 x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
+x11-base/xorg-x11
 x11-drivers/radeon-ucode
 x11-drivers/xf86-input-evdev
 x11-drivers/xf86-video-ati
@@ -70,6 +78,7 @@ x11-misc/dmenu
 x11-misc/dzen
 x11-misc/nitrogen
 x11-misc/pcmanfm
+x11-misc/redshift
 x11-misc/tint2
 x11-misc/trayer
 x11-misc/urxvt-perls

@@ -32,7 +32,7 @@ myFocusFollowsMouse = False
 
 myXmonadBar = "dzen2 -x '0' -y '0' -h '24' -w '1000' -ta 'l' -dock"
 myStatusBar = "conky -c /home/zms/.xmonad/.conky_dzen | dzen2 -x '1000' -w '1410' -h '24' -ta 'r' -y '0' -dock"
-myTrayBar = "trayer --edge top --align right --width 150 --widthtype pixel --tint 0x1C1C1C --transparent true --height 24"
+myTrayBar = "trayer --edge top --align right --width 150 --widthtype pixel --tint 0x1C1C1C --transparent true --alpha 0 --height 24"
 
 myLogHook :: Handle -> X ()
 myLogHook h = dynamicLogWithPP $ defaultPP

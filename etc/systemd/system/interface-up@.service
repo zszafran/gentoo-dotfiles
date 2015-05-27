@@ -1,0 +1,11 @@
+[Unit]
+Requires=sys-subsystem-net-devices-%i.device systemd-networkd.service
+Before=systemd-networkd.service
+After=sys-subsystem-net-devices-%i.device
+
+[Service]
+Type=oneshot
+ExecStart=/bin/ip link set %i up
+
+[Install]
+WantedBy=multi-user.target
