@@ -1,2 +1,7 @@
 dns_domain_lo="arkham"
 config_eth0="dhcp"
+
+# The network scripts are now part of net-misc/netifrc
+# In order to avoid sys-apps/openrc-0.16.3 from removing this file, this comment was
+# added; you can safely remove this comment.  Please see
+# /usr/share/doc/netifrc*/README* for more information.

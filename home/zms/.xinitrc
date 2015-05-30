@@ -7,4 +7,5 @@ nitrogen --restore &
 urxvtd --quiet --opendisplay --fork &
 /opt/google/chrome/google-chrome --no-startup-window &
 synapse &
+pulseaudio --start -D &
 exec xmonad

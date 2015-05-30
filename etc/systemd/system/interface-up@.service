@@ -1,11 +1,13 @@
 [Unit]
-Requires=sys-subsystem-net-devices-%i.device systemd-networkd.service
+Description=IP Link UP
+ConditionCapability=CAP_NET_ADMIN
+DefaultDependencies=no
 Before=systemd-networkd.service
-After=sys-subsystem-net-devices-%i.device
 
 [Service]
-Type=oneshot
+Type=forking
 ExecStart=/bin/ip link set %i up
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=network-pre.target
+RequiredBy=systemd-networkd.service
