@@ -1,165 +1,23 @@
 x11-terms/rxvt-unicode 256-color blink fading-colors focused-urgency font-styles iso14755 perl -pixbuf xft unicode unicode3 alt-font-width buffer-on-clear wcwidth -vanilla
 >=dev-lang/python-2.7.9-r2:2.7 sqlite
-media-gfx/gimp xpm
 x11-misc/dzen xpm
 media-libs/mesa gbm egl gles2 llvm
 x11-misc/redshift geoclue
-media-libs/libcanberra alsa
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libSM-1.2.2-r1 abi_x86_32
-# required by x11-libs/libxcb-1.11-r1::gentoo
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXau-1.0.8 abi_x86_32
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXdamage-1.1.4-r1 abi_x86_32
-# required by x11-libs/libXdamage-1.1.4-r1::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXfixes-5.0.1 abi_x86_32
-# required by x11-libs/libXrandr-1.4.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/randrproto-1.4.1 abi_x86_32
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libxcb-1.11-r1 abi_x86_32
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=media-libs/alsa-lib-1.0.29 abi_x86_32
-# required by x11-libs/libXrandr-1.4.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXrender-0.9.8 abi_x86_32
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/kbproto-1.0.6-r1 abi_x86_32
-# required by x11-libs/libxcb-1.11-r1::gentoo
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/xcb-proto-1.11 python_targets_python3_4 abi_x86_32
-# required by x11-libs/libXext-1.3.3::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/xextproto-7.3.0 abi_x86_32
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXext-1.3.3 abi_x86_32
-# required by x11-libs/libxcb-1.11-r1::gentoo
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=dev-libs/libpthread-stubs-0.3-r1 abi_x86_32
-# required by x11-libs/libXfixes-5.0.1::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/fixesproto-5.0-r1 abi_x86_32
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/inputproto-2.3.1 abi_x86_32
 # required by x11-libs/libSM-1.2.2-r1::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/xproto-7.0.27 abi_x86_32
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/xf86bigfontproto-1.2.0-r1 abi_x86_32
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/recordproto-1.14.2-r1 abi_x86_32
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXtst-1.2.2 abi_x86_32
-# required by x11-libs/libXrender-0.9.8::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/renderproto-0.11.1-r1 abi_x86_32
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=media-libs/freetype-2.5.5 abi_x86_32
-# required by media-libs/libpng-1.6.17::gentoo
-# required by media-libs/freetype-2.5.5::gentoo[png]
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=sys-libs/zlib-1.2.8-r1 abi_x86_32
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXi-1.7.4 abi_x86_32
-# required by media-libs/freetype-2.5.5::gentoo[png]
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=media-libs/libpng-1.6.17 abi_x86_32
-# required by media-libs/freetype-2.5.5::gentoo[bzip2]
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=app-arch/bzip2-1.0.6-r7 abi_x86_32
-# required by x11-libs/libXrender-0.9.8::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libX11-1.6.3 abi_x86_32
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXrandr-1.4.2 abi_x86_32
-# required by x11-libs/libSM-1.2.2-r1::gentoo[uuid]
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=sys-apps/util-linux-2.26.2 abi_x86_32
-# required by x11-libs/libSM-1.2.2-r1::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
+# required by app-editors/gvim-7.4.769::gentoo[session]
+# required by @selected
+# required by @world (argument)
 >=x11-libs/libICE-1.0.9 abi_x86_32
-# required by x11-libs/libXdamage-1.1.4-r1::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-proto/damageproto-1.2.1-r1 abi_x86_32
-# required by x11-libs/libxcb-1.11-r1::gentoo
-# required by x11-libs/libX11-1.6.3::gentoo
-# required by x11-libs/libXi-1.7.4::gentoo
-# required by x11-libs/libXtst-1.2.2::gentoo
-# required by net-misc/teamviewer-9.0.32150::gentoo
-# required by teamviewer (argument)
->=x11-libs/libXdmcp-1.1.2 abi_x86_32
-# required by media-gfx/gimp-2.8.14::gentoo[pdf]
-# required by gimp (argument)
->=app-text/poppler-0.32.0 cairo
-# required by dev-qt/qtcore-5.4.1::gentoo
-# required by dev-qt/qtgui-5.4.1-r1::gentoo
-# required by dev-util/cmake-3.2.2::gentoo[qt5]
-# required by app-text/poppler-0.32.0::gentoo
-# required by media-gfx/gimp-2.8.14::gentoo[pdf]
+# required by x11-libs/libSM-1.2.2-r1::gentoo
+# required by app-editors/gvim-7.4.769::gentoo[session]
 # required by @selected
 # required by @world (argument)
->=dev-libs/libpcre-8.37-r1 pcre16
-# required by x11-libs/libxkbcommon-0.5.0::gentoo[X]
-# required by dev-qt/qtgui-5.4.1-r1::gentoo[xcb]
-# required by dev-util/cmake-3.2.2::gentoo[qt5]
-# required by app-text/poppler-0.32.0::gentoo
-# required by media-gfx/gimp-2.8.14::gentoo[pdf]
+>=x11-proto/xproto-7.0.28 abi_x86_32
+# required by dev-java/antlr-3.1.3-r3::gentoo
+# required by dev-java/jython-2.7.0::gentoo
+# required by dev-java/bsf-2.4.0-r2::gentoo[python]
+# required by dev-java/ant-apache-bsf-1.9.2::gentoo
+# required by dev-java/ant-1.9.2::gentoo[bsf]
 # required by @selected
 # required by @world (argument)
->=x11-libs/libxcb-1.11-r1 xkb
+>=dev-java/antlr-2.7.7-r6:0 java

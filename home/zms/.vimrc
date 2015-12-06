@@ -4,6 +4,7 @@ syntax on
 
 set nu
 set autoindent
+set mouse=a
 set nowrap
 set ts=2 sw=2 et
 set background=dark
@@ -14,6 +15,7 @@ set softtabstop=2
 set wrap linebreak textwidth=0
 set tw=0
 set guitablabel=%!expand(\"\%:t\")
+set clipboard=unnamedplus
 
 set rtp+=$HOME/.local/lib64/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2

@@ -5,14 +5,9 @@ update_interval 1
 xftfont inconsolata for powerline:pixelsize:10
 
 TEXT
-^fg(\#c5c5c5)\
-emerge  \
 ^fg(\#0ac1cd)\
 ${texeci 2 sh /home/zms/tools/emerge-progress.sh}\
-^fg(\#7b7b7b)\
-  -  \
-^fg(\#c5c5c5)\
-cpu   \
+   \
 ^fg(\#833c9f)\
 ${cpu cpu1}\
 ^fg(\#7b7b7b)\
@@ -35,26 +30,19 @@ ${cpu cpu5}\
 -\
 ^fg(\#833c9f)\
 ${cpu cpu6}\
-^fg(\#7b7b7b)\
-  -  \
-^fg(\#c5c5c5)\
-mem   \
+   \
 ^fg(\#048ac7)\
 ${mem}\
-^fg(\#c5c5c5)\
-   -   down   \
+   \
 ^fg(\#cee318)\
 ${downspeedf eth0}\
-^fg(\#c5c5c5)\
-   -   up   \
+   \
 ^fg(\#ff005b)\
 ${upspeedf eth0}\
-^fg(\#c5c5c5)\
-   -   epoch   \
+   \
 ^fg(\#ffe755)\
 ${time %s}\
+   \
 ^fg(\#c5c5c5)\
-   -   time   \
-^fg(\#ffe755)\
 ${time %R}\
 ^fg(\#c5c5c5)\

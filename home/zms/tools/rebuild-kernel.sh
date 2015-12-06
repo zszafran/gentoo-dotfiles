@@ -3,6 +3,7 @@
 #emerge sys-apps/pciutils
 
 cd /usr/src/linux
+make clean
 make menuconfig
 make && make modules_install
 make install
